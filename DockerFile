@@ -5,10 +5,10 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy your jar file into the container (replace app.jar with your actual jar file name)
-COPY app.jar .
+COPY patient-service.jar .
 
 # Expose the port your app runs on (change if needed)
-EXPOSE 8080
+EXPOSE 5000
 
 # Command to run the jar
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "patient-service.jar"]
